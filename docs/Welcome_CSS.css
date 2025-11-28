@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 body {
-    background-image:url("https://github.com/Barqoqa/SimpleCFPwebsite/blob/fdc186209949c9162480c1d166e5295940b08703/Photos/270192.jpg") ;
+    background-image:url("../Photos/270192.jpg") ;
     background-attachment:fixed;
     background-position:center;
     background-size: cover;
