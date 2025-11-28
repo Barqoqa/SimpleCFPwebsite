@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+body {
+    background-image:url("../Photos/6615501.jpg");
+    background-attachment:fixed;
+    background-position:center;
+    background-size: cover;
+
+}
+
+.design {
+    background-color: #ffce6d;
+    margin-top: 100px;
+    margin-right: 350px;
+    margin-left: 350px;
+    margin-bottom: 100px;
+    padding: 12px 12px 12px 12px;
+    border-radius: 20px;
+}
+
+.design2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 40px 20px 40px;
+    border-radius: 20px;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.design1 {
+    box-orient: 1p;
+
+}
+
+.design3 {
+    padding-top: 10px;
+
+}
+
+
+
+
+
+input {
+    border-bottom-style: hidden;
+    border-top-style: hidden;
+    border-right-style:hidden;
+    border-left-style: hidden;
+    outline: none;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    padding: 10px 5px 10px 5px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+    
+    
+}
+
+
+
+.error {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color :rgb(220, 53, 69);
+    font-size:medium;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+
+label {
+    font-family: 'Indie Flower', cursive;
+    padding:20px 0px 20px 0px;
+    font-weight: 600;
+    
+}
+
+
+.s-f {
+    font-family: 'Indie Flower', cursive;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+
+}
+
+
+
+.select label{
+    background-color: #f8f8f8;
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    border: solid 1px #ccc;
+    transition: all 0.4s;
+    border-radius: 5px;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.select input[type="radio"] {
+    display: none;
+
+}
+
+.select input[type="radio"]:checked + label {
+    background-color:#ffce6d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(37, 37, 37, 0.5);
+    color:white;
+
+}
+
+
+.Result1 {
+    background-color: #ffce6d;
+    border-radius: 10px;
+    color: black;
+    margin-right: 450px;
+    margin-left: 450px;
+    margin-top: 80px;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+}
+
+.Result2 {
+    background-color:white;
+    padding: 5px 0px 5px 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+button {
+    background-color: #f8f8f8;
+    outline: none;
+    border: solid 1px #ccc;
+    padding: 15px 45px 15px 45px;
+    border-radius: 22px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+button:hover {
+    background-color: #ffce6d;
+    color: white;
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:silver;
+    height: 1px;
+}

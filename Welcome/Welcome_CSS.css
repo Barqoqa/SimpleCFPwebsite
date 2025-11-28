@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    background-image:url("../Photos/270192.jpg") ;
+    background-attachment:fixed;
+    background-position:center;
+    background-size: cover;
+
+}
+
+.place {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 12.5%;
+}
+
+.design {
+    font-family: 'Indie Flower', cursive;
+    background-color: white;
+    text-align: center;
+    padding: 0px 80px 30px 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.button {
+    border: none;
+    padding: 10px 80px 10px 80px;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 10px;
+    border-width: 0px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: large;
+}
+
+.button2 {
+    padding-top: 20px;
+    border-width: 0px;
+}
+
+.log {
+    font-weight: 200px;
+    border-bottom: 1px solid silver;
+    padding: 0px 80px 0px 80px;
+    font-size: larger;
+}
+
+
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    outline: none;
+
+    
+}
+
+input::placeholder {
+    font-family: 'Indie Flower', cursive;
+  }
+
+.Erorr {
+    color :rgb(220, 53, 69);
+    text-align: left;
+    margin-left: 60px;
+    font-size: medium;
+
+}
+
+#opened {
+    cursor: pointer;
+    width: min-content;
+    margin-left: 205px;
+    margin-top: -23px;
+
+
+}
+
+#closed {
+    width: min-content;
+    margin-left: 205px;
+    margin-top: -22px;
+    cursor: pointer;
+
+
+}
+
+.pass1 {
+    margin-right: 30px;
+}
+
+.email1 {
+    margin-right: 30px;
+}
+
+.material-symbols-outlined {
+    margin-right: 0px;
+}
+
+button:hover {
+    background-color: #ffce6d;
+    color:white;
+
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Important-->
+<!--pst! pst! hey the email is "User1@gmail.com" and the password is User1p -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Welcome_CSS.css" rel="stylesheet">
+    <link href="../Photos/CFP.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+    <script src="Welcome_JS.js">
+    </script>
+
+    <title>Login Page</title>
+
+
+
+</head>
+
+<body>
+
+    <div class="place">
+
+        <div class="design">
+
+            <form>
+
+                <div class="log">
+
+                    <H1>L o g i n</H1>
+
+                </div>
+            
+                <h3 id="e">Email</h3>
+
+                <div class="email1">
+                    <i class="material-symbols-outlined">
+                        account_circle
+                    </i>
+                    <input type="text" placeholder="Enter you email" id="email0">
+
+                </div>
+
+                <div class="Erorr">
+
+                    <p id="Erorr-e" style="display: none"> Email is invalid </p>
+
+                </div>
+
+                <h3 id="p">Password</h3>
+
+                <div class="pass1">
+                    <i class="material-symbols-outlined">lock</i>
+                    <input type="password" placeholder="Enter you Password" id="psw0">
+
+                    <i class="far fa-eye" id="opened" onclick="psw_change()" style="display: block;"></i>
+                    <i class="fa fa-eye-slash" id="closed" onclick="psw_change()" style="display: none;"></i>
+                
+                </div>
+
+                <div class="Erorr">
+
+                    <p id="Erorr-p" style="display: none"> Password is invalid </p>
+
+                </div>
+
+                <div class="button2">
+
+                    <button type="button" id="button0" onclick="login()" class="button">L o g i n</button>
+
+                </div>
+
+                <script>
+                    function psw_change() {
+                        let psw12;
+                        psw12 = document.getElementById("psw0")
+
+                        
+                        if (psw12.type == "password") {
+                            psw12.type = "text"
+                            document.getElementById("opened").style.display = "none"
+                            document.getElementById("closed").style.display = "block"
+                        }
+                 
+                        else{
+                            psw12.type = "password"
+                            document.getElementById("opened").style.display = "block"
+                            document.getElementById("closed").style.display = "none"
+
+                        }       
+
+
+
+                    }
+                </script>
+
+            </form>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

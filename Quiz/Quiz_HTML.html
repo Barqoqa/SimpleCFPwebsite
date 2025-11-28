@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Quiz_CSS.css">
+    <link href="../Photos/CFP.png" rel="icon">
+
+    <script src="Quiz_JS.js"></script>
+
+    <title>Entery Quiz</title>
+
+</head>
+
+
+<body>
+
+
+
+    <div class="design" id="quiz" style="display: block;"> 
+
+        <div class="design1">
+
+            <form name="formname" onsubmit="return false">
+
+                <!------------------------------------------------------------------------->
+
+                <div class="design2">
+
+                    <h2>Section-1: Personal Information</h2>
+
+                    <label> What is your name? </label>
+                    <input type="text" placeholder="Enter your name" id="name" class="">
+
+                    
+                    
+                    <div id="name-b" class="error" style="display: none;">
+                        This field can't be blank!
+                    </div>
+                    <hr>
+                    <label> How old are you? </label>
+                    <input type="number" placeholder="Enter your age" minlength="1" maxlength="2" id="age" class="">
+
+                    <div id="age-blank" class="error" style="display: none;">
+                        This field can't be blank!
+                    </div>
+                    <hr>
+                    <label> What are your favorite hobbies? </label>
+                    <input type="text" placeholder="Enter your name (Optional)">
+
+                    <!------------------------------------------------------------------------------->
+
+                    <h2>Section-2: Acception Question</h2>
+
+                    <label>Define asteroids<b> :</b></label>
+                    <input placeholder="Enter your answer" id="Input1" minlength="1" maxlength="51" class="">
+
+                    <div id="Q1-b" class="error" style="display: none;">
+                        This field can't be blank!
+                    </div>
+
+                    <hr>
+                    <label>What is the world biggest structre? and when was it built?</label>
+                    <input placeholder="Enter your answer" id="Input2" minlength="1" maxlength="51" class="">
+
+                    <div id="Q2-b" class="error" style="display: none;">
+                        This field can't be blank!
+                    </div>
+
+                    <hr>
+                    <label>Why is water not used to extinguish oil fires?</label>
+                    <input placeholder="Enter your answer" id="Input3" minlength="1" maxlength="51" class="">
+
+                    <div id="Q3-b" class="error" style="display: none;">
+                        This field can't be blank!
+                    </div>
+
+
+
+
+
+                    <!------------------------------------------------------------------------>
+                    <hr>
+                    <label>A bee flaps its wings per second at a rate...?.</label>
+
+                    <div class="select">
+
+
+                        <div class="s-f">
+
+                            <input name="iq1" value="False1" type="radio" id="False1">
+                            <label for="False1" id="label2-a">250 time</label>
+
+                        </div>
+
+                        <div class="s-f">
+
+                            <input name="iq1" value="correct" type="radio" id="correct">
+                            <label for="correct" id="label1-a">350 time</label>
+
+                        </div>
+                        <div class="s-f">
+
+                            <input name="iq1" value="False2" type="radio" id="False2">
+                            <label for="False2" id="label3-a">150 time</label>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!---------------------------------------------------------------------------------->
+                    <hr>
+
+                    <label>What does the Milky Way look like? </label>
+                    <div class="select">
+
+                        <div class="s-f">
+
+                            <input name="iq2" value="correct" type="radio" id="correct1">
+                            <label for="correct1" id="label1-b">Spiral</label>
+
+                        </div>
+
+
+
+                        <div class="s-f">
+
+                            <input name="iq2" value="False3" type="radio" id="False3">
+                            <label for="False3" id="label2-b">Elliptical</label>
+
+                        </div>
+
+                        <div class="s-f">
+
+                            <input name="iq2" value="False4" type="radio" id="False4">
+                            <label for="False4" id="label3-b">Circular</label>
+
+                        </div>
+
+                    </div>
+
+
+
+                    
+                    <hr>
+
+                    <div class="design4">
+                        <button type="submit" id="sub" onsubmit="submit()">submit</button>
+                    </div>
+
+                    <script>
+                        document.getElementById("sub").addEventListener("click", submit)
+                    </script>
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <div id="Result" style="display: none;" class="Result1">
+        
+
+        <div class="Result2">
+            <h3 id="succeeded" style="display: none;"><b>Congrats <b id="Name1">Name</b> <br> for succeeding in Code For Palestine Entery Test with <b id="Score1">score</b> point!</b></h3>
+            <h3 id="waiting_list" style="display: none;"><b>Congrats <b id="Name12">Name</b> <br> for being in the <b>waiting list</b> in Code For Palestine Entery Test with <b id="Score12">score</b> point! we will send you a notification if you got accepted</b></h3>
+            <h3 id="Failed" style="display: none;"><b>You failed in Code For Palestine Entery Test with <b id="Score123">score</b> point!</b></h3>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+
+</html>
